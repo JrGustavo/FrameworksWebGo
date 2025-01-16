@@ -1,16 +1,14 @@
 package main
 
 import (
+	"Gin/routes"
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 func main() {
 	r := gin.Default()
 
-	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hola mundo desde aquí")
-	})
+	routes.SetupRoutes(r)
 
 	r.Run(":8080")
 
