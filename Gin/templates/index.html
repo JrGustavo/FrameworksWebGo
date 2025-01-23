@@ -3,19 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{.Title}}</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Understanding LLMs</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
-<header>
-    <h1>{{.Heading}}</h1>
+<header class="hero">
+    <nav class="navbar">
+        <div class="logo">LLM Explorer</div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#learn-more">Learn More</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="cta-button">Get Started</a></li>
+        </ul>
+    </nav>
+    <div class="hero-content">
+        <h1>Transform Your Future with LLMs</h1>
+        <p>Learn how Large Language Models are shaping the world of AI and revolutionizing industries.</p>
+        <a href="#features" class="cta-button">Discover Features</a>
+    </div>
 </header>
 <main>
-    <p>{{.Message}}</p>
+    <section id="features" class="features-section">
+        <h2>Why Choose LLMs?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>AI-Powered Insights</h3>
+                <p>Unleash the potential of AI to gain deeper insights and automate complex tasks.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Seamless Integration</h3>
+                <p>Easily integrate LLMs into your workflows and applications.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Personalized Solutions</h3>
+                <p>Create customized experiences for users with state-of-the-art AI models.</p>
+            </div>
+        </div>
+    </section>
+    <section id="learn-more" class="learn-more-section">
+        <h2>Learn More About LLMs</h2>
+        <p>
+            Large Language Models are AI systems designed to process, understand, and generate natural language. They are trained on massive datasets
+            and are capable of tasks like content creation, customer support, and much more.
+        </p>
+        <a href="#contact" class="cta-button">Contact Us</a>
+    </section>
 </main>
-<footer>
-    <!-- Footer content if necessary -->
+<footer id="contact" class="footer">
+    <div class="footer-content">
+        <h3>Stay Connected</h3>
+        <p>Subscribe to our newsletter and stay updated with the latest in AI technology.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+        <p>&copy; 2025 LLM Explorer. All rights reserved.</p>
+    </div>
 </footer>
-<script src="./static/css/js/script.js"></script>
 </body>
 </html>
